@@ -1,5 +1,80 @@
 body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", sans-serif;
+}
+body main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .card {
+  width: 375px;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border: 3px solid hsl(0, 0%, 7%);
+  box-shadow: 10px 10px 0px 5px hsl(0, 0%, 7%);
+  border-radius: 10px;
+}
+body main .card .image-container {
+  margin: 20px 0;
+}
+body main .card .main__content {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+body main .card .main__content .skills {
+  width: 100px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 0.4em;
+}
+body main .card .main__content .skills a {
+  text-decoration: none;
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+}
+body main .card .main__content h6 {
+  font-size: 1rem;
+  margin: 0;
+  padding: 20px 0;
+}
+body main .card .main__content h1 {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  color: hsl(0, 0%, 7%);
+  font-weight: 900;
+}
+body main .card .profile {
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+body main .card .profile .content {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+body main .card .profile img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}
+body main .card:hover {
+  transform: translate(0, -5px);
 }
 
 /*# sourceMappingURL=styles.css.map */
