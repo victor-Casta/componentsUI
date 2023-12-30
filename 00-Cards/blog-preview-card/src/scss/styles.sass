@@ -1,4 +1,71 @@
-$primary-yellow: hsl(47, 88%, 63%)
+$primary_yellow: hsl(47, 88%, 63%)
+$neutral_white: hsl(0, 0%, 100%)
+$neutral_grey: hsl(0, 0%, 50%)
+$neutral_black: hsl(0, 0%, 7%)
+$principal_font: 'Figtree', sans-serif
 
 body
-  background-color: $primary-yellow
+  width: 100%
+  height: 100vh
+  margin: 0
+  padding: 0
+  background-color: $primary_yellow
+  font-family: $principal_font
+  main
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    .card
+      width: 375px
+      max-width: 375px
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: $neutral_white
+      border: 3px solid $neutral_black
+      box-shadow: 10px 10px 0px 5px $neutral_black
+      border-radius: 10px
+      .image-container
+        margin: 20px 0
+      .main__content
+        display: flex
+        padding: 20px
+        flex-direction: column
+        .skills
+          width: 100px
+          height: 28px
+          display: flex
+          justify-content: center
+          align-items: center
+          background-color: $primary_yellow
+          border-radius: 0.4em
+          a
+            text-decoration: none
+            font-weight: 800
+            color: $neutral_black
+        h6
+          font-size: 1rem
+          margin: 0
+          padding: 20px 0
+        h1
+          font-size: 1.5rem
+          padding: 0
+          margin: 0
+          color: $neutral_black
+          font-weight: 900
+      .profile
+        width: 100%
+        padding: 0 0 20px 0
+        .content
+          width: 100%
+          display: flex
+          padding: 0 20px
+        img
+          width: 50px
+          height: 50px
+          object-fit: cover
+          border-radius: 50%
+          margin: 0 10px 0 0  
+    .card:hover
+      transform: translate(0, -5px)
