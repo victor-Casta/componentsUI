@@ -22,6 +22,7 @@ body main .card {
   border: 3px solid hsl(0, 0%, 7%);
   box-shadow: 10px 10px 0px 5px hsl(0, 0%, 7%);
   border-radius: 10px;
+  transition: transform 0.3s ease-out;
 }
 body main .card .image-container {
   margin: 20px 0;
