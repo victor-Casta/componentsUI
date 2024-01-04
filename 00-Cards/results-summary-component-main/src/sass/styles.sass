@@ -1,0 +1,83 @@
+@use 'mixins' as *
+$primary-light-red: hsl(0, 100%, 67%)
+$primary-orange-yellow: hsl(39, 100%, 56%)
+$primary-green-teal: hsl(166, 100%, 37%)
+$primary-cobalt-blue: hsl(234, 85%, 45%)
+$gradient-light-slate-blue: hsl(252, 100%, 67%)
+$gradient-light-royal-blue: hsl(241, 81%, 54%)
+$gradient-violet-blue: hsla(256, 72%, 46%, 1)
+$gradient-persian-blue: hsla(241, 72%, 46%, 0)
+$neutral-white: hsl(0, 0%, 100%)
+$neutral-pale-blue: hsl(221, 100%, 96%)
+$neutral-light-lavender: hsl(241, 100%, 89%)
+$neutral-dark-gray-blue: hsl(224, 30%, 27%)
+$size-paragraphs: 16px
+$principal-font: 'Hanken Grotesk', sans-serif
+
+body 
+  width: 100%
+  height: 100vh
+  padding: 0
+  margin: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $neutral-white
+  font-family: $principal-font
+  .card-container
+    width: 740px
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 2rem
+    background-color: $neutral-white
+    .content-left
+      padding: 20px
+      display: flex
+      flex-direction: column
+      align-items: center
+      border-radius: 2rem
+      background: linear-gradient(180deg, $gradient-light-slate-blue 0%, $gradient-light-royal-blue 50%, $gradient-light-royal-blue 100%)
+      h2
+        color: $neutral-light-lavender
+        font-size: 20px
+        opacity: 0.9
+      .result
+        width: 200px
+        height: 200px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background: linear-gradient(180deg, $gradient-violet-blue 0%, $gradient-light-royal-blue 70%, $gradient-light-royal-blue 100%)
+        border-radius: 50%
+        h3
+          padding: 0
+          margin: 0
+          color: $neutral-white
+          font-size: 4rem
+          line-height: 0.5
+        p
+          padding: 0
+          margin: 20px 0 0 0
+          font-size: $size-paragraphs
+          color: $neutral-light-lavender
+      .calification
+        margin: 30px 0 10px 0
+        padding: 0
+        font-size: 2rem
+        font-weight: 800
+        color: $neutral-white
+      .description
+        width: 70%
+        text-align: center
+        color: $neutral-light-lavender
+        font-size: $size-paragraphs
+    .content-right
+      background-color: green
+      .item__reaction
+        @include summary__items()
+
+
+  @media (max-width: 600px)
+    .card-container
+      grid-template-columns: 1fr
