@@ -15,6 +15,8 @@ body .card-container {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 0px 34px -10px hsl(234, 85%, 75%);
+  border-radius: 2rem;
 }
 body .card-container .content-left {
   padding: 20px;
@@ -27,6 +29,7 @@ body .card-container .content-left {
 body .card-container .content-left h2 {
   color: hsl(241, 100%, 89%);
   font-size: 20px;
+  padding: 0 0 20px 0;
   opacity: 0.9;
 }
 body .card-container .content-left .result {
@@ -65,13 +68,121 @@ body .card-container .content-left .description {
   color: hsl(241, 100%, 89%);
   font-size: 16px;
 }
-body .card-container .content-right {
-  background-color: green;
+body .card-container .content-right h2 {
+  padding: 10px 0 30px 0;
 }
 body .card-container .content-right .item__reaction {
-  width: 90%;
+  width: 75%;
+  padding: 0 1rem;
   display: flex;
-  background-color: red;
+  justify-content: space-between;
+  background-color: hsl(0, 100%, 97%);
+  border-radius: 0.7rem;
+  margin: 0 0 20px 0;
+}
+body .card-container .content-right .item__reaction div {
+  display: flex;
+  gap: 5px;
+}
+body .card-container .content-right .item__reaction div .title__item {
+  color: hsl(0, 100%, 67%);
+  font-weight: 600;
+}
+body .card-container .content-right .item__reaction div .score__item {
+  color: hsl(224, 30%, 27%);
+  font-weight: 900;
+  padding: 0;
+}
+body .card-container .content-right .item__reaction div .total-score__item {
+  color: hsl(224, 30%, 67%);
+  font-weight: 800;
+}
+body .card-container .content-right .item__memory {
+  width: 75%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(39, 100%, 96%);
+  border-radius: 0.7rem;
+  margin: 0 0 20px 0;
+}
+body .card-container .content-right .item__memory div {
+  display: flex;
+  gap: 5px;
+}
+body .card-container .content-right .item__memory div .title__item {
+  color: hsl(39, 100%, 56%);
+  font-weight: 600;
+}
+body .card-container .content-right .item__memory div .score__item {
+  color: hsl(224, 30%, 27%);
+  font-weight: 900;
+  padding: 0;
+}
+body .card-container .content-right .item__memory div .total-score__item {
+  color: hsl(224, 30%, 67%);
+  font-weight: 800;
+}
+body .card-container .content-right .item__verbal {
+  width: 75%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(166, 100%, 97%);
+  border-radius: 0.7rem;
+  margin: 0 0 20px 0;
+}
+body .card-container .content-right .item__verbal div {
+  display: flex;
+  gap: 5px;
+}
+body .card-container .content-right .item__verbal div .title__item {
+  color: hsl(166, 100%, 37%);
+  font-weight: 600;
+}
+body .card-container .content-right .item__verbal div .score__item {
+  color: hsl(224, 30%, 27%);
+  font-weight: 900;
+  padding: 0;
+}
+body .card-container .content-right .item__verbal div .total-score__item {
+  color: hsl(224, 30%, 67%);
+  font-weight: 800;
+}
+body .card-container .content-right .item__visual {
+  width: 75%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(234, 85%, 95%);
+  border-radius: 0.7rem;
+  margin: 0 0 40px 0;
+}
+body .card-container .content-right .item__visual div {
+  display: flex;
+  gap: 5px;
+}
+body .card-container .content-right .item__visual div .title__item {
+  color: hsl(234, 85%, 45%);
+  font-weight: 600;
+}
+body .card-container .content-right .item__visual div .score__item {
+  color: hsl(224, 30%, 27%);
+  font-weight: 900;
+  padding: 0;
+}
+body .card-container .content-right .item__visual div .total-score__item {
+  color: hsl(224, 30%, 67%);
+  font-weight: 800;
+}
+body .card-container .content-right button {
+  width: 80%;
+  padding: 15px 0;
+  border-radius: 2rem;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 @media (max-width: 600px) {
   body .card-container {

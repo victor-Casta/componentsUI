@@ -1,4 +1,20 @@
-@mixin summary__items($background: red) 
-  width: 90%
+@mixin summary__items($background: red, $color: black) 
+  width: 75%
+  padding: 0 1rem
   display: flex
-  background-color: red
+  justify-content: space-between
+  background-color: $background
+  border-radius: 0.7rem
+  div
+    display: flex
+    gap: 5px
+    .title__item
+      color: $color
+      font-weight: 600
+    .score__item
+      color: hsl(224, 30%, 27%)
+      font-weight: 900
+      padding: 0
+    .total-score__item
+      color: hsl(224, 30%, 67%)
+      font-weight: 800
